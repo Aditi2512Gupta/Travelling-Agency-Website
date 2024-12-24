@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights - GrandStay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Orbitz</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="stays.html">Stays</a>
+                <a href="car-rentals.html">Car Rentals</a>
+                <a href="flights.html">Flights</a>
+            </div>
+        </nav>
+    </header>
+    <section class="flights">
+        <div class="content">
+            <h1>Luxury Flights</h1>
+            <div class="vacation-gallery">
+                <div class="vacation-item">
+                    <img src="Images/Jet.jpg" alt="Private Jet" style="height: 400px; width: 600px;">
+                    <p>Private Jets</p>
+                </div>
+                <div class="vacation-item">
+                    <img src="Images/Plane.webp" alt="First Class" style="height: 400px; width: 600px;">
+                    <p>First-Class Flights</p>
+                </div>
+                <div class="vacation-item">
+                    <img src="Images/Helicopter.jpg" alt="Helicopter Tour" style="height: 400px; width: 600px;">
+                    <p>Helicopter Tours</p>
+                </div>
+            </div>
+            <button id="book-now-button" class="cta-button">Book Now</button>
+        </div>
+    </section>
+    <!-- Booking Modal -->
+<div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Book Your Luxury Stay</h2>
+    <form>
+        <input type="text" placeholder="Enter Your Name">
+        <input type="email" placeholder="Enter Your Email">
+        <textarea placeholder="Enter your preferences"></textarea>
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

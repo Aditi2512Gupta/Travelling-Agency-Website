@@ -1,0 +1,335 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+.icon{
+    display: flex;               /* Align icons horizontally */
+    align-items: center;         /* Center vertically */    
+    display: flex;     
+    /*background: whitesmoke;     /* Background for visibility */
+    padding: 10px;                /* Space around icons */
+    /*border-radius: 5px;         /* Optional: rounded corners */
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  Optional shadow */
+}
+
+.icon i{
+    font-size: 25px;
+    background: rgb(174, 112, 19);
+    padding: 10px;
+    margin:0px 15px;
+    border-radius: 10px;
+}
+
+/* Menu Item Hover Effects */
+.icon :hover {
+    color: rgb(83, 50, 4);
+}
+
+/* Hover Effect for Icons */
+.icon :hover i {
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: rgb(212, 240, 243); /* Dark background for the navbar */
+    display: flex;           /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute space between logo and menu */
+    align-items: center;     /* Vertically center the content */
+
+}
+
+.logo{
+    font-size: 50px;
+    color: rgb(162, 105, 34);
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;              /* Flexbox for the horizontal alignment of menu items */
+    gap: 1.5rem;                /* Space between the menu items */
+}
+
+/* Menu Styling */
+.menu a {
+    text-decoration: none;
+    color: rgb(163, 115, 24);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    gap: 0.8rem; /* Space between icon and text */
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Menu Item Hover Effects */
+.menu a:hover {
+    color: rgb(76, 52, 3);
+}
+
+/* Icon Styling */
+.menu a i {
+    font-size: 1.5rem; /* Adjust the icon size */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.menu a:hover i {
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+}
+
+
+
+/* Parallax Sections */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.agency {
+    background-image: url('Images/Maldives.jpg');
+}
+
+.vacations {
+    background-image: url('Images/Luxury Villa.jpg');
+}
+
+.testimonials {
+    background-image: url('Images/Sunset.jpg');
+}
+
+/* Content Styling */
+.content h1, .content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: whitesmoke;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    padding: 1rem 2rem;           /*space around the button*/
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: red;
+}
+
+/* Vacation Gallery Section */
+.vacation-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.vacation-item {
+    text-align: center;
+}
+
+.vacation-item img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Testimonial Section */
+.testimonial-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonial-gallery img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Final Call to Action Section */
+.call-to-action {
+    background-color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.stays {
+    background-color: #dff0f3; /* Light cyan background */
+    padding: 2rem;
+}
+.stays p , .stays h1{
+    color: #333;
+}
+.modal-content h2 {
+    color: #333;
+}
+
+.car-rentals {
+    background-color: #dff0f3; /* Light cyan background */
+    padding: 2rem;
+}
+.car-rentals p , .car-rentals h1{
+    color: #333;
+}
+.flights {
+    background-color: #dff0f3; /* Light cyan background */
+    padding: 2rem;
+}
+.flights p , .flights h1{
+    color: #333;
+}
+
+
+/* Navbar for small screens (hamburger icon) */
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu.active {
+    display: block;
+}
+
+.fa-bars {
+    display: block;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Dimmed background */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;  /* Ensure it stays above other content */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;  /* Limiting max width */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Soft shadow */
+    text-align: center;
+}
+
+.modal h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.modal input, .modal textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal input:focus, .modal textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.modal button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #e65c00;  /* Slightly darker orange on hover */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #ff6600;  /* Change color when hovered */
+}
+
+.modal input, .modal textarea {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+    }
+}

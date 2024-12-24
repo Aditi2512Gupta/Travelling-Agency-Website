@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            Orbitz
+          </div> 
+          <div class="menu">
+            <a href="Landpage2.html"><i class="fa fa-home"></i> Home</a>
+            <a href="stays.html"><i class="fa fa-building"></i> Stays</a>
+            <a href="car-rentals.html"><i class="fa fa-car"></i> Car Rentals</a>
+            <a href="flights.html"><i class="fa fa-plane"></i> Flights</a>
+         </div> 
+         <div class="icon">
+            <i class="fa fa-user-circle-o" aria-hidden="true" onclick="openModal()"></i>
+            <!-- Modal Popup for Profile Form -->
+            <div id="profileModal" class="modal">
+            <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Edit Profile</h2>
+           <form id="profileForm">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <button type="submit">Save Profile</button>
+           </form>
+           </div>
+           </div>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+    <!-- First Parallax Section: Agency Banner -->
+    <section class="parallax agency">
+        <div class="content">
+            <h1>Explore the World's Most Exclusive Destinations</h1>
+            <p>Experience the best in luxury travel with personalized vacation packages, private islands, and more.</p>
+            <a href="#vacations" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Second Parallax Section: Luxury Offerings -->
+    <section class="parallax vacations">
+        <div class="content">
+            <h2>Luxury Offerings</h2>
+            <div class="vacation-gallery">
+                <div class="vacation-item">
+                    <img src="Images/Luxury Villa.jpg" alt="Private Villa">
+                    <p>Private Villas</p>
+                </div>
+                <div class="vacation-item">
+                    <img src="Images/Luxury Yacht.jpg" alt="Luxury Yacht">
+                    <p>Exclusive Yachts</p>
+                </div>
+                <div class="vacation-item">
+                    <img src="Images/Private Island.jpg" alt="Private Island">
+                    <p>Private Islands</p>
+                </div>
+                <div class="vacation-item">
+                    <img src="Images/Luxury Vacation.jpg" alt="Luxury Vacation">
+                    <p>Luxury Vacation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Parallax Section: Customer Testimonials or Experience -->
+    <section class="parallax testimonials">
+        <div class="content">
+            <h2>Unforgettable Experiences</h2>
+            <p>See how our clients experience the trip of a lifetime. Your dream vacation awaits.</p>
+            <div class="testimonial-gallery">
+                <img src="Images/Customer Vacation.jpg" alt="Customer Vacation">
+                <img src="Images/Customer Vacation2.jpg" alt="Customer Vacation">
+                <img src="Images/Customer Vacation3.jpg" alt="Customer Vacation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Section: Call to Action -->
+    <section class="call-to-action">
+        <div class="content">
+            <h2>Book Your Dream Vacation Today</h2>
+            <p>Contact us now to create your personalized luxury travel experience.</p>
+            <a href="#contact" class="cta-button">Book Now</a>
+        </div>
+    </section>
+    <!-- Booking Modal -->
+<div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Book Your Luxury Stay</h2>
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your Email">
+            <textarea placeholder="Enter your preferences"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
