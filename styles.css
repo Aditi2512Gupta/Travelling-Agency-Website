@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
-    line-height: 1.6;
+    line-height: 2;
 }
 .icon{
     display: flex;               /* Align icons horizontally */
